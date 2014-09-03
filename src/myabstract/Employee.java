@@ -3,22 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package my.concrete;
+
+package myabstract;
+
+import myinterface.*;
+
+
+
 
 /**
  *
  * @author Dan
  */
-public class Employee {
-
+public abstract class Employee {
     private String firstName;
     private String lastName;
     private String idNumber;
-
-    public double getWages() {
-        return 0;
-
-    }
+    
+    
+    public abstract double getWages();
+        
+              
+        
 
     public String getFirstName() {
         return firstName;
@@ -43,4 +49,13 @@ public class Employee {
     public void setIdNumber(String idNumber) {
         this.idNumber = idNumber;
     }
+    
+    
+    
+    
+    
+    
+    
+    
 }
+

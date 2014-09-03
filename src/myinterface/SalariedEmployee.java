@@ -3,44 +3,59 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package my.concrete;
+
+package myinterface;
+
+
+
 
 /**
  *
  * @author Dan
  */
-public class Employee {
-
+public class SalariedEmployee implements Employee {
+    
+    private double salary;
+    
     private String firstName;
     private String lastName;
     private String idNumber;
-
-    public double getWages() {
-        return 0;
-
-    }
-
+       
+  
+    
+    @Override
     public String getFirstName() {
         return firstName;
     }
 
+    @Override
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
+    @Override
     public String getLastName() {
         return lastName;
     }
 
+    @Override
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
+    @Override
     public String getIdNumber() {
         return idNumber;
     }
 
+    @Override
     public void setIdNumber(String idNumber) {
         this.idNumber = idNumber;
     }
+    @Override
+    public double getWages(){         
+               
+        return salary;
+    }
+    
 }
